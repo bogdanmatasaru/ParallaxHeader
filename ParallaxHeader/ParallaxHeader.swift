@@ -84,6 +84,10 @@ public class ParallaxHeader: NSObject {
         }
     }
     
+    public func sendToBack() {
+        scrollView.sendSubviewToBack(contentView)
+    }
+    
     /**
      The content view on top of the UIScrollView's content.
      */
